@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+/* Theme variables used across the full report layout. */
+:root {
+  /* Main brand color for headings and major highlights. */
+  --primary-color: #007f91;
+  /* Secondary highlight color for metrics and accents. */
+  --accent-color: #C4D600;
+  /* Supporting color for badges and tags. */
+  --purple: #4c2d83;
+  /* Overall page background color behind content cards. */
+  --background: #f8f7f4;
+  /* Surface color for cards, boxes, and white panels. */
+  --surface: #ffffff;
+  /* Default text color for paragraphs and headings. */
+  --text-color: #1c1c1e;
+  /* Muted text color for captions and secondary labels. */
+  --text-muted: #6b6b6b;
+  /* Border color for subtle dividers and outlines. */
+  --border-color: rgba(28, 28, 30, 0.14);
+}
+/* Base page styling for background, typography, and spacing. */
+body {
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+/* Outer wrapper that centers the report and sets readable width. */
+.page-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 56px;
+}
+/* Cover block at the top of the report for title and intro details. */
+.cover {
+  background: var(--primary-color);
+  color: var(--surface);
+  padding: 56px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+/* Main cover title style used for the document heading. */
+.cover h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--surface);
+  margin: 0;
+}
+/* Cover subtitle style for short contextual statement below the title. */
+.cover .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: color-mix(in srgb, var(--surface) 80%, transparent);
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+/* Cover date style for small timestamp text on the title block. */
+.cover .date {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--surface) 60%, transparent);
+}
+/* Shared heading style to keep all section titles consistent. */
+h1, h2, h3 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+/* Top-level heading style for major page titles. */
+h1 { font-size: 32px; color: var(--primary-color); }
+/* Section heading style for key report sections. */
+h2 { font-size: 24px; color: var(--primary-color); }
+/* Subsection heading style for supporting content blocks. */
+h3 { font-size: 18px; color: var(--text-color); }
+/* Paragraph style for body text readability. */
+p { margin: 0 0 1em 0; font-size: 16px; }
+/* Highlight card used for callouts and important narrative blocks. */
+.card {
+  background: var(--surface);
+  border-left: 4px solid var(--primary-color);
+  padding: 16px 20px;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
+/* Accent card variant used when a secondary highlight is needed. */
+.card.accent { border-left-color: var(--accent-color); }
+/* Metric container style for compact KPI blocks. */
+.metric-box {
+  display: inline-block;
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--accent-color);
+  padding: 16px 24px;
+  text-align: center;
+  min-width: 120px;
+  border-radius: 6px;
+}
+/* Large metric number style used inside metric boxes. */
+.metric-value {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--accent-color);
+  line-height: 1.1;
+}
+/* Metric caption style used under metric values. */
+.metric-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 6px;
+}
+/* Table layout style for full-width data tables in reports. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+/* Table header style for labeled column headings. */
+th {
+  background: var(--primary-color);
+  color: var(--surface);
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  padding: 10px 14px;
+  text-align: left;
+}
+/* Table cell style for readable row content and row separators. */
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+/* Alternating row style to improve scanability in long tables. */
+tr:nth-child(even) { background: color-mix(in srgb, var(--primary-color) 4%, var(--surface)); }
+/* Base tag style for short labels and category chips. */
+.tag {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--surface);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Accent tag style for secondary category labels. */
+.tag.accent { background: var(--accent-color); }
+/* Purple tag style for badges like MBTI or status labels. */
+.tag.purple { background: var(--purple); }
+/* Footer style for closing notes at the bottom of each report page. */
+.footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
