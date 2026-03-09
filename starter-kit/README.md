@@ -1,32 +1,63 @@
-# Markdown to Web Page Starter Kit
+# Starter Kit: From Raw Files to Shareable Outputs
 
-This kit helps non-technical teams turn everyday files into clean, shareable web pages and PDFs using Codex.
+This folder is the hands-on toolkit for SCB 10X employees to produce polished HTML/PDF deliverables from normal working files (notes, CSV, docs) using Codex or similar AI tools.
+
+## What this kit helps you do
+- Turn unstructured inputs into structured, readable outputs.
+- Reuse the same prompt logic and style across projects.
+- Reduce manual formatting work in slides/docs.
 
 ## Who this is for
-- You usually work in Word, Excel, or PowerPoint and want a faster way to produce polished documents.
-- You are comfortable with content and analysis, but you do not want to learn programming.
-- You want repeatable outputs that look consistent across projects.
+- Teams that mostly work in Word, Excel, or PowerPoint.
+- Individual contributors who need better output quality without coding.
+- Anyone who wants a repeatable AI workflow, not one-off prompting.
 
-## What's inside
-- `guides/`: short, plain-English walkthroughs for markdown, file conversion, and context setup.
-- `skills/`: reusable prompt files you can attach in Codex instead of rewriting instructions each time.
-- `css/`: a starter stylesheet (`report-starter.css`) that controls colors, fonts, spacing, and layout.
-- `sample-projects/`: two complete examples you can run immediately and adapt to your own work.
+## Folder map
+- `guides/`: foundations and preparation guides.
+- `skills/`: reusable instruction files for repeat jobs.
+- `css/`: shared visual style (`report-starter.css`).
+- `sample-projects/`: ready-to-run persona demos with generated outputs.
 
-## How to get started
-- Path A, I want to understand the concepts first: start with `guides/01-markdown-basics.md`.
-- Path B, I want to see a working example immediately: open a sample project folder and follow its `GETTING-STARTED.md`.
+## Start in 15 minutes
+1. Choose one sample in `sample-projects/`.
+2. Open its `README.md` to understand the business context.
+3. Open `GETTING-STARTED.md` in the same folder.
+4. Attach the listed files in Codex.
+5. Paste the prompt and run.
+6. Open generated HTML and export to PDF if needed.
 
-## The two examples
-Poom's example shows how market research notes can become a structured report and then a finished HTML file ready for PDF export. Ploy's example shows how a simple employee CSV can become a friendly visual directory people will actually use.
+## Sample projects
+1. `sample-projects/persona-A-poom-market-researcher/`
+Purpose: turn interview notes into a structured market research report.
+Deliverables: `market-research-report.html`, `market-research-report.pdf`, `market-research-report-16x9.pdf`.
 
-## Prebuilt example outputs
-- Persona A (`sample-projects/persona-A-poom-market-researcher/`) already includes `market-research-report.html`, `market-research-report.pdf`, and `market-research-report-16x9.pdf`.
-- Persona B (`sample-projects/persona-B-ploy-employee-directory/`) already includes `employee-directory.html` and `employee-directory.pdf`.
+2. `sample-projects/persona-B-ploy-employee-directory/`
+Purpose: turn employee CSV data into a friendly internal directory.
+Deliverables: `employee-directory.html`, `employee-directory.pdf`.
 
-## How to generate PDF outputs
-1. Open the HTML file in any browser.
+## How to customize for your own team
+1. Duplicate the closest persona project folder.
+2. Replace files in `raw-inputs/` with your own content.
+3. Adjust `context/` files so tone and audience match your team.
+4. Update styles in `css/report-starter.css` for branding.
+5. Save a reusable skill in `skills/` for your repeated workflow.
+6. Re-run and iterate until the output is stable.
+
+## Use with tools other than Codex
+The process is tool-agnostic:
+1. Upload the same files listed in each `GETTING-STARTED.md`.
+2. Use the same prompt text.
+3. Ask for standalone HTML output.
+4. Save/open HTML locally and print to PDF.
+
+## Suggested learning path
+1. Beginner: `guides/01-markdown-basics.md`
+2. File prep: `guides/02-docx-pdf-to-markdown.md`
+3. Translation workflow: `guides/03-file-translation-guide.md`
+4. Team documentation: `guides/04-what-to-document.md`
+
+## PDF export quick reminder
+1. Open the generated HTML in browser.
 2. Go to File > Print.
-3. Set Destination to Save as PDF.
-4. Click Save.
-5. For a 16:9 version of Persona A, open `market-research-report-16x9.html` and use the same File > Print > Save as PDF flow.
+3. Choose Save as PDF.
+4. Save the file.
